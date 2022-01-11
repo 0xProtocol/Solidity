@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.5.3+commit.10d17f24"
+		"version": "0.5.17+commit.d19bba13"
 	},
 	"language": "Solidity",
 	"output": {
@@ -8,9 +8,40 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "greet",
+				"name": "get",
 				"outputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "text",
+				"outputs": [
+					{
+						"internalType": "string",
 						"name": "",
 						"type": "string"
 					}
@@ -31,7 +62,7 @@
 		"compilationTarget": {
 			"smartcontract.sol": "Contract"
 		},
-		"evmVersion": "byzantium",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"optimizer": {
 			"enabled": false,
@@ -41,9 +72,10 @@
 	},
 	"sources": {
 		"smartcontract.sol": {
-			"keccak256": "0xe40de1c91953ab72798170ea830873659d0c32053b35d52b67bb363b3570c366",
+			"keccak256": "0xf1a74e29fe5379dd10bce681cc883cc78c7cacec3b13d1f08ac51b7df12fcb44",
 			"urls": [
-				"bzzr://b47247674c5e7afc3f0265f7f33387a4bef15601cb984fce0852600acb246aca"
+				"bzz-raw://691186b32ced55a5473179f65aaa88d9b2801370fe581a6d98ee0b19dab61a49",
+				"dweb:/ipfs/QmZUBjJ18xthENsg5Qvh2DXvsTmTudMnMfPnmekWDhUhpC"
 			]
 		}
 	},
