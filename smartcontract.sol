@@ -1,14 +1,14 @@
 pragma solidity ^0.5.3;
 
 contract Contract {
-    string public text;
+    string public txt;
 
     function set(string memory _text) public{
-        text = _text;
+        txt = _text;
 
     }
     function get() public view returns (string memory) {
-        return text;
+        return txt;
 
     }
 

@@ -38,7 +38,7 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "text",
+				"name": "txt",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -72,10 +72,10 @@
 	},
 	"sources": {
 		"smartcontract.sol": {
-			"keccak256": "0xf1a74e29fe5379dd10bce681cc883cc78c7cacec3b13d1f08ac51b7df12fcb44",
+			"keccak256": "0x0878722b2a4af5a2d562742383c800a1d2dbd4814187bde95fa228655db6f754",
 			"urls": [
-				"bzz-raw://691186b32ced55a5473179f65aaa88d9b2801370fe581a6d98ee0b19dab61a49",
-				"dweb:/ipfs/QmZUBjJ18xthENsg5Qvh2DXvsTmTudMnMfPnmekWDhUhpC"
+				"bzz-raw://f869f306aedd2fbb6923f137da411b67b3f5d8de04251c86b27b4d42ea1e9acd",
+				"dweb:/ipfs/QmUb9rpDDjtN8xLs3NQsCPMYvyagkZkyGMXQMKo7Hg1W6U"
 			]
 		}
 	},
