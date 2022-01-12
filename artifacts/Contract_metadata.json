@@ -8,46 +8,61 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "get",
+				"name": "oneEther",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"payable": false,
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_text",
-						"type": "string"
-					}
-				],
-				"name": "set",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "txt",
+				"name": "oneWei",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"payable": false,
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "testOneEther",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "testOneWei",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -72,10 +87,10 @@
 	},
 	"sources": {
 		"smartcontract.sol": {
-			"keccak256": "0x0878722b2a4af5a2d562742383c800a1d2dbd4814187bde95fa228655db6f754",
+			"keccak256": "0xa52a35e339a79482b0a6ac3bec30dfd37c1a9bffc40fe9fe74d0e82a3081c1e9",
 			"urls": [
-				"bzz-raw://f869f306aedd2fbb6923f137da411b67b3f5d8de04251c86b27b4d42ea1e9acd",
-				"dweb:/ipfs/QmUb9rpDDjtN8xLs3NQsCPMYvyagkZkyGMXQMKo7Hg1W6U"
+				"bzz-raw://0987d6b35233d9f37361ea9f0143398c490bb0a70a4cf490590f9fe6dbe9518f",
+				"dweb:/ipfs/QmZ9mjdawpNBEbRDrTLGhds3YdNpJLkcGqLUm8v2LiiFov"
 			]
 		}
 	},
