@@ -6,6 +6,45 @@
 	"output": {
 		"abi": [
 			{
+				"constant": false,
+				"inputs": [],
+				"name": "gasRefund",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "i",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "loop",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "oneEther",
@@ -87,10 +126,10 @@
 	},
 	"sources": {
 		"smartcontract.sol": {
-			"keccak256": "0xa52a35e339a79482b0a6ac3bec30dfd37c1a9bffc40fe9fe74d0e82a3081c1e9",
+			"keccak256": "0xcb4c1d0cf51add12921951ad0bfb70523dea9459dd40ccdd216b157d87c41898",
 			"urls": [
-				"bzz-raw://0987d6b35233d9f37361ea9f0143398c490bb0a70a4cf490590f9fe6dbe9518f",
-				"dweb:/ipfs/QmZ9mjdawpNBEbRDrTLGhds3YdNpJLkcGqLUm8v2LiiFov"
+				"bzz-raw://f7cfe9335c26d9664d2750d2ec571f1e6a5f92e204c139c552ac3810b1b930f2",
+				"dweb:/ipfs/QmPhwd9t5eMgTqbqURVrix3w7ms5LVuHu3fYouRe1zbTZw"
 			]
 		}
 	},
