@@ -1,34 +1,38 @@
-pragma solidity ^0.5.3;
+//SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.22 <0.9.0;
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Contract {
-    //string public txt;
-    uint public oneWei = 1 wei;
-    uint public oneEther = 1 ether;
-    uint public i = 0;
+// contract to mint nfts and deploy on eth blockchain ERC721 standard
+contract NFTCollectible is Ownable, ERC721{
 
-   /* function set(string memory _text) public{
-        txt = _text;
-    }
-    function get() public view returns (string memory) {
-        return txt;
-    }*/
-    function testOneWei() public pure returns (bool)
-    {return 1 wei == 1;}
+    uint256 public totalSupply=0; //total token minted
+    uint256 constant public MAX_AMOUNT = 10000;
 
-    function testOneEther() public pure returns (bool)
-    {return 1 ether == 1e18 wei;}
-
-    function gasRefund() public returns (uint)
+// user who is calling method is sender
+    constructor() ERC721("NFTName", "abbreviation")
     {
-        return tx.gasprice; //fixed at 1 wei
-    }
-
-    function loop() public {
-        while(true)
+        //create tokens
+        for(uint i=0; i<50; i++)
         {
-            i+=1;
+            _safeMint(msg.sender, ++totalSupply);
         }
     }
-    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
