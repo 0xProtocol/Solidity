@@ -8,6 +8,8 @@ contract NFTCollectible is Ownable, ERC721{
 
     uint256 public totalSupply=0; //total token minted
     uint256 constant public MAX_AMOUNT = 10000;
+    uint256 constant public MAX_TOKENS_PER_ACCOUNT = 3;
+    uint256 constant public LISTING_PRICE = 0.05 ether;
 
 // user who is calling method is sender
     constructor() ERC721("NFTName", "abbreviation")
@@ -17,6 +19,25 @@ contract NFTCollectible is Ownable, ERC721{
         {
             _safeMint(msg.sender, ++totalSupply);
         }
+    }
+
+    function mintTokenFromWeb(uint256 tokenQuantity) external payable
+    {
+        require(totalSupply + tokenQuantity <= MAX_AMOUNT, "sold out!");
+        require(LISTING_PRICE * tokenQuantity <= msg.value, "send more eth!");
+        require(balanceOf(msg.sender)+ tokenQuantity <= MAX_TOKENS_PER_ACCOUNT, "max token = 3 for you account");
+
+        //user mints less than 3 tokens
+
+        for(uint256 i = 0; i<tokenQuantity; i++)
+        {
+            _safeMint(msg.sender, ++totalSupply);
+        }
+    }
+
+//if stuck in contract
+    function withdraw(address treasury) external payable onlyOwner{
+        require(payable(treasury).send(address(this).balance));
     }
 
 }

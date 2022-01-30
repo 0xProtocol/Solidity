@@ -106,7 +106,33 @@
 			},
 			{
 				"inputs": [],
+				"name": "LISTING_PRICE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "MAX_AMOUNT",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MAX_TOKENS_PER_ACCOUNT",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -195,6 +221,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenQuantity",
+						"type": "uint256"
+					}
+				],
+				"name": "mintTokenFromWeb",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -417,6 +456,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "treasury",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -576,11 +628,11 @@
 			]
 		},
 		"smartcontract.sol": {
-			"keccak256": "0x0f09f8f08a7de875e65a0b037d7dc7981e33155e6d9a8f53ee48a14e7ebeabf8",
+			"keccak256": "0x3d7c29603d24d4ddcb0ca4a28388ae3d35e31b7bacaa2fca5ada4d590a965776",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9719345b01f7d7d249d1cce989a54b854bf5574db093dda51cb40862f9e6dc35",
-				"dweb:/ipfs/QmYX67Y4p471NbF5Qb4HA9ewAUsiEUQqo3PQZxsUQAEVYg"
+				"bzz-raw://27c096435e8e52a131f7997c7646738d38422131348f8690efc9800cfba534cc",
+				"dweb:/ipfs/QmNctaQtg5uW6Bm5deurmsGiZ7v63EecK7iddqKWwghbnd"
 			]
 		}
 	},
